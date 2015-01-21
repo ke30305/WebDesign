@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Sunlignt Brunch Restaurant | By Yoyo's Design Box</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Apple devices -->
+	<link rel="shortcut icon" href="images/shortcut-icons/shortcut-icon_16.png"> <!-- 16x16 -->
+    <link rel="icon" type="image/png" href="images/shortcut-icons/shortcut-icon_64.png" /> <!-- 64x64 -->
+	<link rel="apple-touch-icon" href="images/shortcut-icons/shortcut-icon_20.png"> <!-- 20x20 -->
+	<link rel="apple-touch-icon" sizes="76x76" href="images/shortcut-icons/shortcut-icon_76.png"> <!-- 76x76 -->
+	<link rel="apple-touch-icon" sizes="152x152" href="images/shortcut-icons/shortcut-icon_152.png"> <!-- 152x152 -->
+	
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Andika|Bad+Script|Buenard:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" media="all" />
+	
+	<!-- javaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/navi.js"></script>
+	
+	<script>
+		$(function() 
+		{
+			menu.init();
+		});
+
+	</script>
+	<script type="text/javascript">
+	$(function(){
+		$("#gotoTop").click(function(){
+			jQuery("html,body").animate({
+				scrollTop:0
+			},1000);
+		});
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 300){
+				$('#gotoTop').fadeIn("fast");
+			} else {
+				$('#gotoTop').stop().fadeOut("fast");
+			}
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<header class="header-type">
+		<div class="container">
+			<nav class="main-menu-top">
+				<div class="navbar navbar-left">
+					<ul class="nav-ul nav-ul-left">
+						<li id="about-navi-btn"><a href="#About-block">About</a></li>
+						<li><a href="#Cooks-block">Cooks</a></li>
+					</ul>
+				</div>
+				<div style="float:left; width: 200px;">.</div>
+				<div class="navbar navbar-right">
+					<ul class="nav-ul nav-ul-right">
+						<li><a href="#Meals-block">Menu</a></li>
+						<li><a href="#Contact-block">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="mobile-menu">
+				<a id="mobile_link" class="mobileBtn"><img src="images/menu-alt-32.png"/></a>
+				<ul id="mobile_nav" class="nav-ul">
+					<li><a href="#About-block">About</a></li>
+					<li><a href="#Cooks-block">Cooks</a></li>
+					<li><a href="#Meals-block">Menu</a></li>
+					<li><a href="#Contact-block">Contact</a></li>
+				</ul>
+			</nav>
+			<a class="brand-logo"></a>
+		</div>
+	</header>
+	
+	<!-- wrapper Begin -->
+	<a id="gotoTop" class="go-top" href="#"><img border="0" src="images/top-32.png"/></a>
+	<div class="main-wrapper">
+		<div class="banner">
+			<div class="slider-ctrl">
+				<a class="enable">1</a>
+				<a>2</a>
+				<a>3</a>
+			</div>
+			<div class="slider-container">
+				<div class="slider-contents">
+					<!-- Banner image 1 -->
+					<div class="slider-box">
+						<div class="silider-img"><img src="images/banner-img1.jpg" /></div>
+						<div class="silider-detail"><h2>Fresh, Health, Delicious</h2><p>Daily fresh and delicious brunch, pasta, steak dishes, light food!</p></div>
+					</div>
+					
+					<!-- Banner image 2 -->
+					<div class="slider-box">
+						<div class="silider-img"><img src="images/banner-img2.jpg" /></div>
+						<div class="silider-detail"><h2>Tomato Parmesan Cheese Pasta</h2><p>Unique flavor, slightly sweet and sour pasta, sprinkle with the Parmesan cheese!</p></div>
+					</div>
+					
+					<!-- Banner image 3 -->
+					<div class="slider-box">
+						<div class="silider-img"><img src="images/banner-img3.jpg" /></div>
+						<div class="silider-detail"><h2>Salmon Steak With Lemon</h2><p>Fresh salmon season package, containing bread, soups, drinks!</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<!-- DailySpecial Begin -->
+		<section id="Daily-block" class="row white-row">
+			<div class="white-row-top"></div>
+			<div class="white-row-content">
+				<div class="container">
+					<div class="title">
+						<div class="title-line-left"></div>
+						<div class="title-word"><span>Daily Specialties</span></div>
+						<div class="title-line-right"></div>
+					</div>
+					
+					<div class="row-main">
+						<div id="Special-1" class="meal-box">
+							<div class="meal-photo"><img src="images/foods/food-1.jpg" /></div>
+							<div class="meal-detail">
+								<div class="special-price"><img src="images/special_price.png" /><span>$230</span></div>
+								<div class="special-name">Mexico New York Spicy Chicken Burritos</div>
+							</div>
+						</div>
+						<div id="Special-2" class="meal-box">
+							<div class="meal-photo"><img src="images/foods/food-2.jpg" /></div>
+							<div class="meal-detail">
+								<div class="special-price"><img src="images/special_price.png" /><span>$200</span></div>
+								<div class="special-name">Red Berries And White Syrup Pancke</div>
+							</div>
+						</div>
+						<div id="Special-3" class="meal-box last-meal">
+							<div class="meal-photo"><img src="images/foods/food-3.jpg" /></div>
+							<div class="meal-detail">
+								<div class="special-price"><img src="images/special_price.png" /><span>$180</span></div>
+								<div class="special-name">Strawberry With Cream Syrup Muffin</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="white-row-bottom"></div>
+		</section>
+		
+		<!-- AboutUS Begin -->
+		<section id="About-block" class="row">
+			<div class="container">
+				<div class="title">
+					<div class="title-line-left"></div>
+					<div class="title-word"><span>About Us</span></div>
+					<div class="title-line-right"></div>
+				</div>
+				<div class="descrip">Sed egestas ante et vulputate volutpat, eros pede semper est vitae luctus metus libero eu augue morbi purus libero, faucibus adipiscing commodo quis gravida id est sed lectus praesent elementum hendrerit tortor sed semper lorem at felis.</div>
+				<div id="about-photo" class="photo-view">
+					<div class="photo-contents">
+						<div class="photo-boxes">
+							<div class="photo-box"><img src="images/about-1.jpg"/></div>
+							<div class="photo-box"><img src="images/about-2.jpg"/></div>
+							<div class="photo-box"><img src="images/about-3.jpg"/></div>
+						</div>
+						
+					</div>
+					<div class="view-items">
+						<a class="item focus"> </a>
+						<a class="item"> </a>
+						<a class="item"> </a>
+					</div>
+				</div>
+				<div class="min-photo-boxes">
+					<div class="min-photo-box"><img src="images/about-1.jpg"/></div>
+					<div class="min-photo-box"><img src="images/about-2.jpg"/></div>
+					<div class="min-photo-box"><img src="images/about-3.jpg"/></div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Cooks Begin -->
+		<section id="Cooks-block" class="row">
+			<div class="container">
+				<div class="title">
+					<div class="title-line-left"></div>
+					<div class="title-word"><span>Our Cooks</span></div>
+					<div class="title-line-right"></div>
+				</div>
+				<div class="descrip">Sed egestas ante et vulputate volutpat, eros pede semper est vitae luctus metus libero eu augue morbi purus libero, faucibus adipiscing commodo quis gravida id est sed lectus praesent elementum hendrerit tortor sed semper lorem at felis.</div>
+				<div class="person-view">
+					<div class="person">
+						<img src="images/chef/nalita.jpg"/>
+						<div class="person-detail">
+							<div class="name">Nalita Vader</div>
+							<div class="job-title">Sous Chef</div>
+						</div>
+					</div>
+					<div class="person">
+						<img src="images/chef/peter.jpg"/>
+						<div class="person-detail">
+							<div class="name">Peter Simth</div>
+							<div class="job-title">Master Chef</div>
+						</div>
+					</div>
+					<div class="person">
+						<img src="images/chef/helen.jpg"/>
+						<div class="person-detail">
+							<div class="name">Helen Doran</div>
+							<div class="job-title">Pastry Chef</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- OurMenu Begin -->
+		<section id="Meals-block" class="row white-row">
+			<div class="white-row-top"></div>
+			<div class="white-row-content">
+				<div class="container">
+					<div class="title">
+						<div class="title-line-left"></div>
+						<div class="title-word"><span>Our Menu</span></div>
+						<div class="title-line-right"></div>
+					</div>
+					<div class="descrip">Sed egestas ante et vulputate volutpat, eros pede semper est vitae luctus metus libero eu augue morbi purus libero, faucibus adipiscing commodo quis gravida id est sed lectus praesent elementum hendrerit tortor sed semper lorem at felis.</div>
+					
+					<ul class="menu-tab">
+						<li class="tab-item infocus">Brunch</li>
+						<li class="tab-item">Sandwich</li>
+						<li class="tab-item">Pasta & Pizza</li>
+						<li class="tab-item">Steak Dishes</li>
+						<li class="tab-item">Others</li>
+					</ul>
+					<div class="menu-content">
+						<!-- Brunch Block -->
+						<ul class="meals-block">
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-4.jpg"></a></div>
+								<div class="meal-detail"><h3>The Perfact Morning Breakfast</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-5.jpg"></a></div>
+								<div class="meal-detail"><h3>The Perfact Morning Breakfast</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-6.jpg"></a></div>
+								<div class="meal-detail"><h3>The Perfact Morning Breakfast</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-7.jpg"></a></div>
+								<div class="meal-detail"><h3>The Perfact Morning Breakfast</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-8.jpg"></a></div>
+								<div class="meal-detail"><h3>The Perfact Morning Breakfast</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-9.jpg"></a></div>
+								<div class="meal-detail"><h3>The Perfact Morning Breakfast</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+						</ul>
+						
+						<!-- Sandwich Block -->
+						<ul class="meals-block">
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-16.jpg"></a></div>
+								<div class="meal-detail"><h3>Smoked Chicken Sandwich</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-17.jpg"></a></div>
+								<div class="meal-detail"><h3>Parmesan Cheese Parini</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-18.jpg"></a></div>
+								<div class="meal-detail"><h3>France Pastoral Sandwich</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+						</ul>
+						
+						<!-- Pasta Block -->
+						<ul class="meals-block">
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-10.jpg"></a></div>
+								<div class="meal-detail"><h3>ausage Spaghetti With Cream Sauce</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-11.jpg"></a></div>
+								<div class="meal-detail"><h3>Meat Sauce Rigatoni With Tomato Sauce</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-12.jpg"></a></div>
+								<div class="meal-detail"><h3>Seafood Spaghetti With Cream Sauce</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-13.jpg"></a></div>
+								<div class="meal-detail"><h3>Smoked House Chicken Pizza</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-15.jpg"></a></div>
+								<div class="meal-detail"><h3>Garden Fresh Vegetables Pizza</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-14.jpg"></a></div>
+								<div class="meal-detail"><h3>Fried Black Pepper Beef Pizza</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+						</ul>
+						<!-- Steaks Block -->
+						<ul class="meals-block">
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-19.jpg"></a></div>
+								<div class="meal-detail"><h3>Pesto Grilled Sirloin Steak</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-20.jpg"></a></div>
+								<div class="meal-detail"><h3>Fried Lemon Salmon Steak</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-21.jpg"></a></div>
+								<div class="meal-detail"><h3>The Lemon Herb Chicken</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+						</ul>
+					
+						<!-- Others Block -->
+						<ul class="meals-block">
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-22.jpg"></a></div>
+								<div class="meal-detail"><h3>Banana Chocolate Muffins</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box">
+								<div class="meal-photo"><a><img src="images/foods/food-23.jpg"></a></div>
+								<div class="meal-detail"><h3>Strawberry With Cream Muffins</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+							<li class="meal-box last-meal">
+								<div class="meal-photo"><a><img src="images/foods/food-24.jpg"></a></div>
+								<div class="meal-detail"><h3>Strawberry And Cream Pastry</h3><p>Lorem ipsum dolor sit amet, consectetuer Quisque volutpat mattis eros.</p></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="white-row-bottom"></div>
+		</section>
+		
+		<!-- Contact Begin -->
+		<section id="Contact-block" class="row">
+			<div class="container">
+				<div class="title">
+					<div class="title-line-left"></div>
+					<div class="title-word"><span>Contact Us</span></div>
+					<div class="title-line-right"></div>
+				</div>
+				<div class="descrip">Sed egestas ante et vulputate volutpat, eros pede semper est vitae luctus metus libero eu augue morbi purus libero, faucibus adipiscing commodo quis gravida id est sed lectus praesent elementum hendrerit tortor sed semper lorem at felis.</div>
+				
+				<div class="contact-main">
+					<div id="adress" class="contact-box">
+						<div class="contact-item"><img src="images/adress-48.png"/></div>
+						<div class="contact-detail">No.198, Yangguang St.,Taipei City 114, Taiwan</div>
+					</div>
+					<div id="adress" class="contact-box">
+						<div class="contact-item"><img src="images/phone-48.png"/></div>
+						<div class="contact-detail">Tel: +816 213 7844</br>Fax: +816 213 7755</div>
+					</div>
+					<div id="adress" class="contact-box">
+						<div class="contact-item"><img src="images/email-48.png"/></div>
+						<div class="contact-detail">service@sunlight.com</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Message-block" class="row">
+			<div class="message-main">
+				<div class="message-title">Drop us a line!</div>
+				<div class="message-box">
+					<table class="user-message">
+						<tr>
+							<th class="info-item userName">Name</th>
+							<td class="info-item userName"><input type="text"/></td>
+						</tr>
+						<tr>
+							<th class="info-item userEmail">Email</th>
+							<td class="info-item userEmail"><input type="text"/></td>
+						</tr>
+						<tr>
+							<th class="info-item">Message</th>
+							<td class="info-item"><input type="text"/></td>
+						</tr>
+					</table>
+				</div>
+				<div class="message-submit"><a class="send-btn">Submit</a></div>
+			</div>
+		</section>
+	</div>
+	
+	<!-- footer Begin -->
+	<footer class="footer-type">
+		<div class="footer-lace"></div>
+		<div class="footer-main">
+			<div class="social">
+				<a><img src="images/social/facebook-48.png"/></a>
+				<a><img src="images/social/twitter-48.png"/></a>
+				<a><img src="images/social/google-48.png"/></a>
+				<a><img src="images/social/blogger-48.png"/></a>
+				<a><img src="images/social/youtube-48.png"/></a>
+			</div>
+			2014 Sunlight Brunch. All right reserve. Designed by <a href="http://yuyi.twbbs.org/index.html" target="_blank">Yoyo's Design Box</a>.
+		</div>
+	</footer>
+	
+	<script src="js/banner-slider.js"></script>
+	<script src="js/photos-view.js"></script>
+	<script src="js/meals-tab.js"></script>
+</body>
+</html>
