@@ -1,20 +1,19 @@
-var menu = 
-{   
-    init : function() 
+var menu =
+{
+    init : function()
     {
         $('#mobile_menu_link').bind('click', this, this.toggle);
-        $(document).bind('click', this, this.hide);
         $(window).bind('resize', this, this.show_full_screen);
     },
 
     // 判斷是否為 mobile 模式
-    is_mobile_enable : function() 
+    is_mobile_enable : function()
     {
         return (screen.availWidth <= 750 || window.outerWidth <= 750) ? true : false;
     },
 
     // 選單顯示
-    show : function() 
+    show : function()
     {
         if (!menu.is_mobile_enable()) return true;
 
@@ -24,7 +23,7 @@ var menu =
     },
 
     // 選單隱藏
-    hide : function() 
+    hide : function()
     {
         if (!menu.is_mobile_enable()) return true;
 
@@ -34,7 +33,7 @@ var menu =
     },
 
     // 顯示切換
-    toggle : function(event) 
+    toggle : function(event)
     {
         if (!menu.is_mobile_enable()) return true;
 
@@ -46,7 +45,7 @@ var menu =
         else
         {
             menu.hide();
-        }   
+        }
 
         // 取消氣泡事件
         var evt = event ? event : window.event;
@@ -55,7 +54,7 @@ var menu =
     },
 
     // 全屏顯示選單
-    show_full_screen : function() 
+    show_full_screen : function()
     {
         if (!menu.is_mobile_enable())
         {
