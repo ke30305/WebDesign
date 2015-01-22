@@ -3,6 +3,7 @@ var menu =
     init : function()
     {
         $('#mobile_menu_link').bind('click', this, this.toggle);
+        $('#mobile_menu_item a').bind('click', this, this.hide);
         $(window).bind('resize', this, this.show_full_screen);
     },
 
