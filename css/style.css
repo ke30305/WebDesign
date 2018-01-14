@@ -221,7 +221,8 @@ select{
 	float: left;
 	margin: auto;
 	text-align: left;
-	width: 70%;
+	width: 65%;
+	padding-top: 20px;
 }
 .description p{
 	margin-bottom: 20px;
@@ -450,223 +451,83 @@ select{
 	border-top: 2px solid #3bd;
 	margin: 40px 0;
 }
-.message-img{
-	background-color: #3bd;
-	font-size: 26px;
-	color: #fff;
-	position: absolute;
-	left: 0;
-	right: 0;
-	padding: 10px;
-	margin: -22px auto 0;
-	width: 26px;
-	height: 26px;
-	border-radius: 9999px;
-}
+.message-img{ background-color: #3bd; font-size: 26px; color: #fff; position: absolute; left: 0; right: 0; padding: 10px; margin: -22px auto 0; width: 26px; height: 26px; border-radius: 9999px;}
 .message	{ color: #666; margin: 30px 0;}
 .messageBox	{ padding: 20px 10px 0; }
 
-
 /* Footer */
-.main-footer{
-	background: #333;
-    display: block;
-    padding: 10px 20px;
-}
-.footer-block{
-	margin: 0 auto 10px;
-}
-.social{
-	padding-top: 10px;
-	margin: 0 auto;
-	display: table;
-}
-.social-icon	{font-size: 36px;color: #777;margin: 0 5px;}
-.facebook:hover	{ color: #57e;}
-.twitter:hover	{ color: #5ce;}
-.google:hover	{ color: #e55;}
-.flickr:hover	{ color: #e5b;}
-.pinterest:hover{ color: #e55;}
+.main-footer{ background: #333; display: block; padding: 10px 20px;}
+.footer-block{ margin: 0 auto 10px;}
+.social	{ padding-top: 10px;margin: 0 auto;display: table;}
+
+.social-icon	{font-size: 36px; color: #777; margin: 0 5px;}
+.facebook:hover	{ color: #35b;}
+.twitter:hover	{ color: #3ce;}
+.google:hover	{ color: #e33;}
+.flickr:hover	{ color: #e3b;}
+.pinterest:hover{ color: #e33;}
 
 /* Footer Copyright */
-.footer-copy{
-	background: #333;
-	border-top: 1px solid #444;
-	font-size: 0.8em;
-	padding: 5px;
-}
+.footer-copy{ background: #333; border-top: 1px solid #444; font-size: 0.8em; padding: 5px;}
 
 /* LightBox Style */
-#lightbox {
-	position:fixed; /* keeps the lightbox window in the current viewport */
-	top:0; 
-	left:0; 
-	width:100%; 
-	height:100%; 
-	background:rgba(0,0,0,0.4); 
-	text-align:center;
-	z-index: 1000;
-}
-.lightbox_main{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	display: -ms-flexbox;
-	-ms-flex-align: center;
-}
-.lightbox_main2{
-	background-color: #fff;
-	padding: 5px;
-	margin: auto;
-	max-width:600px;
-	box-shadow:0 0 25px #111;
-}
-.closeWord, .closeImg{
-	float: right;
-	color: #555;
-	position: relative;
-	top: 2px;
-	cursor: pointer;
-	text-align: right;
-}
-.closeImg{
-	font-size: 18px;
-	top: 4px;
-	margin-left: 3px;
-}
-#content img { 
-	max-width:600px;
-	width: 100%;
-}
+#lightbox	{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); text-align:center;z-index: 1000;}
+.lightbox_main	{ height: 100%; width: 100%; display: flex; display: -ms-flexbox; -ms-flex-align: center;}
+.lightbox_main2	{ background-color: #fff; padding: 5px; margin: auto; max-width:600px; box-shadow:0 0 25px #111;}
+.closeWord, .closeImg{ float: right; color: #555; position: relative; top: 2px; cursor: pointer; text-align: right;}
+.closeImg	{ font-size: 18px;top: 4px;margin-left: 3px;}
+#content img	{ max-width:600px;width: 100%;}
 
-/* MediaScreen x1000*/
-@media screen and (max-width:1040px) {
-	/* About Section */
-	.description{
-	width: 65%;
-	}
-}
 
 /* MediaScreen x1000 */
 @media screen and (max-width:900px) {
 	/* About Section */
-	.userProfile {
-		width: 100%;
-		display:block;
-	}
-	.imgProfile {
-		float: none;
-		margin: 0 auto;
-	}
-	.imgProfile img {
-		border-radius: 1000px;
-		display: inline-block;
-		max-width: 180px;
-	}
-	.description{
-		float: none;
-		width: 85%;
-		text-align: center;
-	}
-	.description .icon{
-		margin: 0 5px;
-		padding: 10px 60px;
-	}
+	.userProfile	{ width: 100%; display:block;}
+	.imgProfile		{ float: none; margin: 0 auto;}
+	.imgProfile img	{ border-radius: 1000px; display: inline-block; max-width: 180px;}
+	.description	{ float: none; width: 85%; text-align: center; padding-top: 0;}
+	.description .icon{ margin: 0 5px; padding: 10px 60px;}
 }
-
 /* MediaScreen x750 */
  @media screen and (max-width:750px) {
 	.main-nav ul	{ display: none; }
 	.main-nav li	{ float: none; border-bottom: 1px solid #555; }
 	.main-nav li:hover{ background-color: #555; }
 	.main-nav li:hover a{ color: #fff; display: block; }
-
 	.language{ float: none;  margin-right: 0; display:none;}
 	.main-nav .mobileBtn{ display: inline-block;}
 	/* Features Block */
-	.features-box{
-		width: 50%;
-	}
+	.features-box{width: 50%;}
 	/* Portfolio Section */
-	.WorkItem{
-		width: 330px;
-	}
-	.Overlay{
-		width: 330px;
-		height: 220px;
-	}
-	.Overlay_view{
-		line-height: 200px;
-	}
+	.WorkItem	{ width: 330px;}
+	.Overlay	{ width: 330px; height: 220px;}
+	.Overlay_view{line-height: 200px;}
 }
-
-/* MediaScreen x700 */
-@media screen and (max-width:700px) {
-	/* Features Block */
-	.featuresHolder{
-		margin: 10px auto;
-		display: inline-block;
-	}
-	.features-box{
-		float:none;
-		width:100%;
-		margin: 10px 0 50px;
-	}
-	.features-words		{ max-width: 70%; margin: 0 auto; }
-}
-
 /* MediaScreen x600 */
 @media screen and (max-width:600px) {
 	/* About Section */
-	.description p{
-		text-align:justify
-	}	
-	.description .icon{
-		margin: 10px auto;
-		display: block;
-	}
+	.description p{ text-align:justify}	
+	.description .icon{ margin: 10px auto; display: block;}
 	.LDemo_btn{ margin: 5px 0 30px;}
+	/* Features Block */
+	.featuresHolder	{ margin: 10px auto; display: inline-block;}
+	.features-box	{ float:none; width:100%; margin: 10px 0 50px;}
+	.features-words	{ max-width: 70%; margin: 0 auto; }
 }
-
 /* MediaScreen x400 */
 @media screen and (max-width:400px) {
 	/* Portfolio Section */
-	.WorkTab {
-		font-size: 1em;
-		width: 80%;
-	}
-	.TabItem {
-		margin: 7px auto;
-		padding: 7px 0;
-		display: block;
-	}
-	.WorkItem{
-		width: 270px;
-	}
-	.Overlay{
-		width: 270px;
-		height: 180px;
-	}
-	.Overlay_view{
-		line-height: 160px;
-	}
+	.WorkTab	{ font-size: 1em; width: 80%;}
+	.TabItem	{ margin: 7px auto; padding: 7px 0; display: block;}
+	.WorkItem	{ width: 270px;}
+	.Overlay	{ width: 270px; height: 180px;}
+	.Overlay_view{ line-height: 160px;}
 }
 
 /* MediaScreen x300 */
 @media screen and (max-width:350px) {
 	/* Portfolio Section */
-	.WorkItem{
-		width: 210px;
-	}
-	.Overlay{
-		width: 210px;
-		height: 140px;
-	}
-	.Overlay_view{
-		line-height: 120px;
-	}
-	/* Footer */
-	.social-icon{
-		font-size: 32px;
-	}
+	.WorkItem	{ width: 210px;}
+	.Overlay	{ width: 210px;height: 140px;}
+	.Overlay_view{ line-height: 120px;}
 }

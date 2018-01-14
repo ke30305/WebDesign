@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Coolmix Fashion Shopping Tamplate | By Yoyo's Design Box</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Apple devices -->
+	<link rel="shortcut icon" href="images/shortcut-icons/shortcut-icon_16.png"> <!-- 16x16 -->
+    <link rel="icon" type="image/png" href="images/shortcut-icons/shortcut-icon_64.png" /> <!-- 64x64 -->
+	<link rel="apple-touch-icon" href="images/shortcut-icons/shortcut-icon_20.png"> <!-- 20x20 -->
+	<link rel="apple-touch-icon" sizes="76x76" href="images/shortcut-icons/shortcut-icon_76.png"> <!-- 76x76 -->
+	<link rel="apple-touch-icon" sizes="152x152" href="images/shortcut-icons/shortcut-icon_152.png"> <!-- 152x152 -->
+	
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic|Kalam:400,700,300|Raleway:400,300,200,500,600,700,800,900,100' rel='stylesheet' type='text/css'>	
+	
+	<!-- CSS -->
+	<link href="css/style.css" rel="stylesheet" media="all" />
+	
+	<!-- javaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/navi.js"></script>
+	<script src="js/banner-slider.js"></script>
+	
+	<script>
+		$(function() 
+		{
+			menu.init();
+		});
+
+	</script>
+	
+</head>
+<body>
+	<!-- Header -->
+	<header id="MainWrapper" class="sticky-wrapper">
+		<div class="container">
+			<div class="logo"><img src="images/logo.png"></div>
+			<div class="row-box main-menu">
+				<nav class="main-nav">
+					<ul id='mobile_menu_item' class="nav-list">
+						<li><a href="#"><span>Clothes</span></a></li>
+						<li><a href="#"><span>Pants</span></a></li>
+						<li><a href="#"><span>Accessories</span></a></li>
+						<li><a href="#"><span>Shose</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="row-box functions">
+				<div class="user"><a class="login">Login</a></div>
+				<div class="cart-list"><img src="images/cart_icon_26.png"/><span class="cart-number">2</span></div>
+			</div>
+			<nav class="mobile-menu">
+				<a id="mobile_link" class="mobileBtn"><img src="images/menu_icon_30.png"/></a>
+				<ul id="mobile_nav" class="nav-ul">
+					<li><a href="#"><span>Clothes</span></a></li>
+					<li><a href="#"><span>Pants</span></a></li>
+					<li><a href="#"><span>Accessories</span></a></li>
+					<li><a href="#"><span>Shose</span></a></li>
+					<li><a href="#"><span>Login</span></a></li>
+					<li><a href="#"><span>Cart</span><span class="cart-number">2</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- Banner -->
+	<section class="slider-block">
+		<div class="banner">
+			<div class="slider-container">
+				<div class="slider-contents">
+					<div class="slider-box">
+						<div class="silider-detail">
+							<h1 class="s-words">Christmas Fashion</h1>
+							<h2 class="s-words">Let you had a warm winter !</h2>
+						</div>
+						<div class="silider-img" style="background-image: url(images/banner_1.jpg);"></div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-ctrl">
+				<a class="enable">1</a>
+				<a>2</a>
+				<a>3</a>
+				<a>4</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Small AD -->
+	<section id="small-AD-block" class="row">
+		<div class="container">
+			<div class="ad-picture ad-picture-left">
+				<div><img src="images/s_ad_1.jpg"/></div>
+				<div class="ad-picture-word">Deals of This Week</div>
+			</div>
+			<div class="ad-picture ad-picture-right">
+				<img src="images/s_ad_2.jpg"/>
+				<div class="ad-picture-word">2015 Spring Collection</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<!-- weekly Populor -->
+	<section id="populor-block" class="row">
+		<div class="container">
+			<!-- Big Title -->
+			<div class="block-title">
+				<div class="title-word">Weekly Popular Products</div>
+				<div class="title-line"></div>
+			</div>
+			<div class="clear"></div>
+			
+			<!-- Product 1 -->
+			<div class="product_list populor_product">
+				<img src="images/photo/dress_img_1.jpg"/>
+				<div class="price">$450</div>
+				<div class="name">White Stars Casual Denim Shirt</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+			<!-- Product 2 -->
+			<div class="product_list populor_product product_list_plural">
+				<img src="images/photo/dress_img_2.jpg"/>
+				<div class="price">$990</div>
+				<div class="name">Europe Houndstooth Wool Coat</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+			<!-- Product 3 -->
+			<div class="product_list populor_product">
+				<img src="images/photo/dress_img_3.jpg"/>
+				<div class="price">$580</div>
+				<div class="name">Paris Twist Textured Sweaters</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+			<!-- Product 4 -->
+			<div class="product_list populor_product product_list_right product_list_plural">
+				<img src="images/photo/dress_img_4.jpg"/>
+				<div class="price">$690</div>
+				<div class="name">Retro Elegant Woolen Splice Dress</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<!-- Medium AD -->
+	<section id="medium-AD-block" class="row">
+		<div class="medium-AD-box">
+			<div class="AD-overlay"> </div>
+			<div class="AD-word">
+				Let the warmth around you, 
+				</br> &nbsp;&nbsp;&nbsp;&nbsp;winter can be very colorful !
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<!-- weekly New -->
+	<section id="latest-block" class="row">
+		<div class="container">
+			<!-- Big Title -->
+			<div class="block-title">
+				<div class="title-word">New Arrivals This Week</div>
+				<div class="title-line"></div>
+			</div>
+			<div class="clear"></div>
+			
+			<!-- Product 1 -->
+			<div class="product_list populor_product">
+				<img src="images/photo/dress_img_5.jpg"/>
+				<div class="price">$690</div>
+				<div class="name">Black Ballet Feather Knitted Jacket</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+			<!-- Product 2 -->
+			<div class="product_list populor_product product_list_plural">
+				<img src="images/photo/dress_img_6.jpg"/>
+				<div class="price">$750</div>
+				<div class="name">Double Pocket Design Denim Jacket </div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+			<!-- Product 3 -->
+			<div class="product_list populor_product">
+				<img src="images/photo/dress_img_7.jpg"/>
+				<div class="price">$1290</div>
+				<div class="name">Paris Ladies Blending Woolen Coat</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+			<!-- Product 4 -->
+			<div class="product_list populor_product product_list_right product_list_plural">
+				<img src="images/photo/dress_img_8.jpg"/>
+				<div class="price">$590</div>
+				<div class="name">Retro Elegant Woolen Splice Dress</div>
+				<div class="addCar">Add to Cart</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<!-- Shopping Details -->
+	<section id="guide-block" class="row guide-row">
+		<div class="container">
+			<div class="guide-box">
+				<div class="guide-img"><img src="images/car_icon_64.png"/></div>
+				<div class="guide-word">Free Shipping on orders </br> over $100</div>
+			</div>
+			<div class="guide-box guide-box-right">
+				<div class="guide-img"><img src="images/bell_icon_64.png"/></div>
+				<div class="guide-word">Operate Time </br> AM 09:00 - PM18:00</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<!-- Footer -->
+	<footer class="footer-type">
+		<div class="container">
+			<div class="copyright-left">2015 Coolmix Fashion. All right reserve. Designed by Yoyo's Design Box.</div>
+			<div class="copyright-right">About  /  Events  /  Shopping  /  Contact</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+</body>
+
+

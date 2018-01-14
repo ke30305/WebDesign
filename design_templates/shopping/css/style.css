@@ -1,0 +1,169 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	color: #555;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+*:link, *:visited, *:hover, *:active, *:focus , * {
+	-o-transition: color .30s linear, background-color .30s linear, border-color .30s linear;
+	-webkit-transition: color .30s linear, background-color .30s linear, border-color .30s linear;
+	-moz-transition: color .30s linear, background-color .30s linear, border-color .30s linear;
+	transition: color .30s linear, background-color .30s linear, border-color .30s linear;
+}
+a		{ color:#555; text-decoration: none; cursor: pointer; }
+a:hover	{ color:#999; }
+.clear	{ clear: both;}
+
+/*---------- Sticky Wrapper ----------*/
+.sticky-wrapper{ background: rgba(0,0,0,0.8); position: fixed; top: 0; left: 0; width: 100%; height: 60px; display: block; z-index: 100; }
+.wrapper-row{ padding:0 10px; text-align:center; }
+.row-box	{ line-height: 60px;}
+.logo		{ float: left; height: 50px; padding: 5px 0; margin-right: 50px;}
+/* Nav Menu */
+.main-nav	{position: relative; margin: 0 auto; padding: 0; }
+.main-nav ul, .nav-ul{ margin: 0; padding: 0; list-style: none; }
+.main-nav li	{ float: left; padding: 0; cursor: pointer; }
+.main-nav a	{ font: 500 1.1em/60px 'Raleway', sans-serif; color: #fff; padding:0 20px; text-transform: uppercase;}
+.main-nav a:hover{ color: #aaa;}
+/* User, Cart */
+.functions	{ font: 400 0.9em/60px 'Raleway', sans-serif; color: #fff; float: right;}
+.functions a	{ color: #fff;}
+.functions a:hover{ color: #aaa;}
+.user		{ float: left; margin-right: 10px;}
+.cart-list	{ float: right;}
+.cart-list img	{ position: relative; top: 8px; margin-right: 5px;}
+.cart-list span, .cart-number{ background: #3cc; font: 600 0.9em 'Raleway', sans-serif; color: #fff; padding: 2px 6px; border-radius: 50px; }
+
+/* Mobile Menu */
+.mobile-menu{ display: none;}
+.mobileBtn	{ display: block; position: absolute; top: 15px; right: 15px; height: 30px; }
+.nav-ul		{ display: none; background: #fff; border-top: 5px solid #3cc; width: 200px; position: absolute; right: 10px; box-shadow: 0 1px 10px #333;}
+.nav-ul li	{ padding: 0; cursor: pointer;}
+.nav-ul a	{ display: block; font: 400 1em/30px 'Raleway', sans-serif; color: #555; padding: 7px 10px; text-transform: uppercase; }
+.nav-ul a:hover{ background: #e5e5e5;}
+.cart-number{ padding: 1px 6px; margin-left: 5px;}
+
+
+/* Banner */
+.banner			{ }
+.slider-container{ max-height: 600px; overflow: hidden;}
+.slider-box		{ position: relative;}
+.slider-box img	{ width: 100%;}
+.slider-ctrl	{ position: absolute; right: 0; left: 0; margin: -35px auto 0; display: inline; z-index: 10;}
+.slider-ctrl > a { background-color: rgba(0, 0, 0, 0.5); color: #fff; font: 400 0.8em 'Muli', sans-serif; padding: 6px 10px; margin: 0 1px; cursor: pointer; border-radius: 50%}
+.slider-ctrl > a:hover{ background-color: rgba(51, 204, 204, 1);}
+.slider-ctrl .enable, .slider-ctrl .enable:hover{ background-color: rgba(51, 204, 204, 1);}
+
+.silider-img	{ height: 550px; background-position: center top; background-size: cover !important;}
+.silider-detail	{ color: #fff; position: absolute; left: 45%; top: 32%; max-width: 100%; text-align: left;}
+.s-words		{ background-color: rgba(0,0,0,0.7); color: #fff; padding: 5px 10px; margin: 25px 0; display: table;}
+.silider-detail h1{ font: 600 3em 'Raleway', sans-serif;}
+.silider-detail h2{ font: 300 1.5em 'Raleway', sans-serif; }
+
+/* All Section */
+.row		{ margin: 30px auto; display: block; }
+.container	{ margin: 0 auto; padding: 0 10px; max-width: 900px; text-align:center; }
+
+/* Small AD Section */
+.ad-picture		{ width: 49%; overflow: hidden; position: relative;}
+.ad-picture-left{ float: left; }
+.ad-picture-right{ float: right;}
+.ad-picture img	{ width: 100%;}
+.ad-picture-word{ background: rgba(0,0,0,0.6); font: 300 1.6em/30px 'Raleway', sans-serif; color: #fff; padding: 10px; position: absolute; top: 45%;margin: 0 10%; width: 75.5%; }
+
+/* Title */
+.block-title{ position: relative;}
+.title-line	{ border-bottom: 4px double #777; position: relative; bottom: 30px; max-width: 900px;}
+.title-word	{ background: #fff; font: 400 2em/60px 'Raleway', sans-serif; color: #555; position: relative; margin: 0 auto; padding: 0px 10px; text-transform: uppercase; display:table; z-index: 1;}
+
+/* Product Section */
+.product_list	{ float: left; width: 22.2%; margin: 0 3.7% 0 0; text-align: center;}
+.product_list_right	{ margin: 0;}
+.product_list img	{ width: 100%;}
+.price	{ font: 400 1.1em/60px 'Muli', sans-serif; position: absolute; background: #3cc; color: #fff; margin: -70px 0 0 6px; width: 60px; text-align: center; border-radius: 50%;}
+.name	{ font: 400 1.2em 'Muli', sans-serif; margin: 5px 0; text-align: center; min-height: 50px; overflow: hidden;}
+.addCar	{ background: #777; font-size: 1.2em; color: #fff; padding: 8px; }
+
+/* Medium AD Section */
+.medium-AD-box{ background:url(../images/m_ad_1.jpg) repeat center top rgba(0, 0, 0, 0); height: 350px; overflow: hidden; position: relative; background-size: cover !important;}
+.AD-overlay	{ background-color: rgba(0,0,0,0.5); height: 350px; }
+.AD-word	{ font: 400 2.9em/70px 'Kalam', cursive; color: #fff; position: absolute; top: 30%; left: 0; right: 0;}
+
+/* Shopping Guide Section */
+.guide-box	{float: left; background: #eee; font: 400 1.3em/30px 'Raleway', sans-serif; color: #999; padding: 10px 20px; width: 48%; text-align: left; box-sizing: border-box; }
+.guide-box-right{ float: right;}
+.guide-img	{ float: left; margin-right: 20px;}
+
+/*---------------------------- footer ----------------------------*/
+.footer-type	{ font: 400 0.8em/30px 'Muli', sans-serif; background: #222; color: #999; padding: 10px; }
+.copyright-left	{float: left;}
+.copyright-right{float: right;}
+
+/* ---------------------------- MediaScreen ---------------------------- */
+@media screen and (max-width:800px){
+	.logo { float: none; margin-right: 0px; text-align: left;}
+	/* Banner */
+	.silider-detail{ left: 40%;}
+	.silider-img{ height: 500px;}
+	/* Nav Menu */
+	.main-menu, .functions{ display: none;}
+	.mobile-menu{ display: block;}
+	/* Product Section */
+	.name	{ font: 500 1.2em 'Muli', sans-serif; min-height: 70px;}
+	.addCar	{ background-color: #777; font-size: 1.2em; padding:10px;}
+	/* Shopping Guide Section */
+	.guide-box		{float: none; width: 100%; margin: 15px auto;}
+	.guide-box-right{ float: none;}
+}
+@media screen and (max-width:700px){
+	/* Banner */
+	.silider-detail{ left: 30%;}
+	.silider-detail h1{font: 600 2.8em 'Raleway', sans-serif;}
+	.silider-detail h2{font: 300 1.3em 'Raleway', sans-serif;}
+	/* Small AD Section */
+	.ad-picture-word{ font: 300 1.4em/30px 'Raleway', sans-serif; }
+	/* Product Section */
+	.product_list{ float: left; width: 45%; margin: 0 10% 5% 0; text-align: center; }
+	.product_list_right	{ margin: 0;}
+	.product_list_plural{ margin: 0;}
+	.name	{ font: 400 1.4em 'Muli', sans-serif; min-height: 30px; overflow: hidden; margin: 5px 0 10px;}
+	.addCar	{ font-size: 1.1em;}
+	/* Title */
+	.block-title{ margin: 5px 0;}
+	.title-word	{ font: 400 1.8em/60px 'Raleway', sans-serif; }
+	/* Medium AD Section */
+	.medium-AD-box	{height: 300px;}
+	.AD-word		{font: 400 2.5em/60px 'Kalam', cursive;}
+	/*----- footer -----*/
+	.footer-type	{ height: 100%; padding: 10px; display: block;}
+	.copyright-left	{ float: none; display: block;}
+	.copyright-right{ float: none; display: block;}
+}
+@media screen and (max-width:600px){
+	/* Banner */
+	.silider-img	{ height: 400px;}
+	.silider-detail	{ top:27%; left:0; right:0; margin: auto; max-width: 80%;}
+	.s-words		{ text-align: center; display: block;}
+	.silider-detail h2{ margin: 0 auto; max-width:300px;}
+	/* Small AD Section */
+	.ad-picture		{ width: 85%; overflow: hidden; position: relative; margin: 10px auto;}
+	.ad-picture-left{ float: none; }
+	.ad-picture-right{ float: none;}
+	.ad-picture-word{ font: 300 1.4em/30px 'Raleway', sans-serif; }
+	/* Title */
+	.title-line{ border-bottom: 0px double #777;}
+	.title-word{ font: 500 1.4em/60px 'Raleway', sans-serif; width: 80%; border-top: 4px double #777; border-bottom: 4px double #777;}
+	/* Product Section */
+	.product_list		{float: none; width: 85%; margin: 30px auto; text-align: center;}
+	.product_list_right	{ margin: 20px auto 30px;}
+	.product_list img	{ width: 100%;}
+	.product_list_plural{}
+	.price	{font: 400 1.3em/70px 'Muli', sans-serif; margin: -80px 0 0 6px; width: 70px;}	
+	/* Small AD Section */
+	.ad-picture-word{ top: 35%; }
+	/* Medium AD Section */
+	.medium-AD-box	{display: none;}
+	/* Shopping Guide Section */
+	.guide-box		{width: 85%;}
+}
