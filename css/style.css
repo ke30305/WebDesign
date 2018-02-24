@@ -506,7 +506,6 @@ select{
 /* MediaScreen x600 */
 @media screen and (max-width:600px) {
 	/* About Section */
-	.description p{ text-align:justify}	
 	.description .icon{ margin: 10px auto; display: block;}
 	.LDemo_btn{ margin: 5px 0 30px;}
 	/* Features Block */
