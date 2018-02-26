@@ -63,5 +63,12 @@ var menu =
             $('#mobile_lang_select').show();
             $('#mobile_menu_link').attr('show', 1);
         }
+    },
+
+    // 捲動效果
+    scroll : function (id)
+    {
+        var top = $(id).offset().top;
+        $("html,body").animate({scrollTop: top + 'px'}, 300);
     }
 };
