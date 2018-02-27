@@ -491,7 +491,7 @@ select{
 	.imgProfile		{ float: none; margin: 0 auto;}
 	.imgProfile img	{ border-radius: 1000px; display: inline-block; max-width: 180px;}
 	.description	{ float: none; width: 85%; text-align: center; padding-top: 0;}
-	.description .icon{ margin: 0 5px; padding: 10px 60px;}
+	.description .icon{ margin: 0 auto; padding: 10px 60px;}
 }
 /* MediaScreen x750 */
  @media screen and (max-width:750px) {
