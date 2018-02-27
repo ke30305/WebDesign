@@ -69,6 +69,6 @@ var menu =
     scroll : function (id)
     {
         var top = $(id).offset().top;
-        $("html,body").animate({scrollTop: top + 'px'}, 300);
+        $("html,body").animate({scrollTop: top + -40 + 'px'}, 1000);
     }
 };
