@@ -10,7 +10,7 @@ var menu =
     // 判斷是否為 mobile 模式
     is_mobile_enable : function()
     {
-        return (screen.availWidth <= 750 || window.outerWidth <= 750) ? true : false;
+        return (screen.availWidth <= 750) ? true : false;
     },
 
     // 選單顯示
