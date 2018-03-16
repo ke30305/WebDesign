@@ -70,7 +70,6 @@ body{
 	.full-header-fixed .left-wrp i.logo,
 	.full-header-fixed.header-bg-white .left-wrp i.logo{ display: none; }
 	.full-header-fixed .right-wrp ul li a{ padding: 0 16px; }
-	.full-banner-container .banner-words-block{ bottom: 12%; }
 	.full-banner-container .banner-words-block h2{ text-align: center; }
 	.full-banner-container .banner-words-block .lg-title{ font-size: 36px; margin-bottom: 10px;}
 	.full-banner-container .banner-words-block .sm-title{ font-size: 18px; }
