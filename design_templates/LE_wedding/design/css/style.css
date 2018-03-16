@@ -66,7 +66,7 @@ body{
 
 @media screen and ( max-width:415px) {
 	.full-banner-container,
-	.full-banner-container .overlay-bg{ min-height: 500px; }
+	.full-banner-container .overlay-bg{ min-height: 100%; }
 	.full-header-fixed .left-wrp i.logo,
 	.full-header-fixed.header-bg-white .left-wrp i.logo{ display: none; }
 	.full-header-fixed .right-wrp ul li a{ padding: 0 16px; }
