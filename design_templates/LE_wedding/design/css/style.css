@@ -28,8 +28,12 @@ body{
 .full-header-fixed .right-wrp ul li a{ font-size: 16px; font-weight: 600; color: #fff; line-height: 80px; letter-spacing: 1px; padding: 0 24px; display: block; text-decoration: none; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -ms-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease;}
 .full-header-fixed .right-wrp ul li a:hover,
 .full-header-fixed .right-wrp ul li a:active{ opacity: 0.6; }
+.full-header-fixed .right-wrp a.header-menu{ display: none; margin-top: 24px; width: 36px; height: 32px; background: url(../images/menu.png)no-repeat center center / 18px auto; border: 1px solid #fff; border-radius: 4px; opacity: 0.9;}
+.full-header-fixed .right-wrp a.header-menu:hover,
+.full-header-fixed .right-wrp a.header-menu:active{ opacity: 0.6; }
 
-.full-header-fixed.header-bg-white{ height: 70px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.15);}
+.full-header-fixed.header-bg-white{ height: 70px; background-color: rgba(255,255,255,0.9); box-shadow: 0 0 10px rgba(0,0,0,0.15);}
+.full-header-fixed.header-bg-white a.header-menu{ margin-top: 19px; background: url(../images/menu_black.png)no-repeat center center / 18px auto; border: 1px solid #333;}
 .full-header-fixed.header-bg-white .left-wrp{ }
 .full-header-fixed.header-bg-white .left-wrp i.logo{ width: 136px; height: 70px; background: url(../images/logo_black.png) no-repeat left center / auto 38px transparent; display: block;}
 .full-header-fixed.header-bg-white .right-wrp ul li a{ color: #777; line-height: 70px;}
@@ -67,11 +71,12 @@ body{
 @media screen and ( max-width:415px) {
 	.full-banner-container,
 	.full-banner-container .overlay-bg{ min-height: 100%; }
-	.full-header-fixed .left-wrp i.logo,
-	.full-header-fixed.header-bg-white .left-wrp i.logo{ display: none; }
-	.full-header-fixed .right-wrp ul li a{ padding: 0 16px; }
+	.full-header-fixed .right-wrp a.header-menu{ display: block; }
+	.full-header-fixed .right-wrp ul{ display: none; background-color: rgba(0,0,0,0.6); height: 100vh; position: fixed; top: 0; left: 0; right: 0; padding-top: 80px;}
+	.full-header-fixed .right-wrp ul li{ float: none; width: 100%; text-align: center; }
+	.full-header-fixed .right-wrp ul li a{ padding: 0 16px; line-height: 80px;}
 	.full-banner-container .banner-words-block h2{ text-align: center; }
 	.full-banner-container .banner-words-block .lg-title{ font-size: 36px; margin-bottom: 10px;}
-	.full-banner-container .banner-words-block .sm-title{ font-size: 18px; }
+	.full-banner-container .banner-words-block .sm-title{ font-size: 16px; }
 
 }
