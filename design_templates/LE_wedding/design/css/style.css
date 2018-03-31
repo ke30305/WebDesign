@@ -47,20 +47,23 @@ body{
 .full-banner-container .banner-words-block .lg-title{ font-size: 56px; font-weight: 600; font-style: italic; margin-bottom: 10px;}
 .full-banner-container .banner-words-block .sm-title{ font-size: 24px; font-weight: 300; font-style: italic; margin-bottom: 0;}
 
-.gmap-content{ background-color: #f5f5f5; min-height: 400px; width: 100%;}
+.gmap-content{ min-height: 400px; width: 100%;}
 
 .white-bg-container{ padding: 50px 0; }
-.white-bg-container .title{ font-size: 32px; color: #333; line-height: 40px; text-align: center; padding-bottom: 60px; margin-bottom: 30px; background: url(../images/leaves_title.png) no-repeat center center / auto 98px;}
+.white-bg-container .title{ font-size: 32px; color: #333; line-height: 36px; text-align: center; padding-bottom: 60px; margin: 0 auto 40px; background: url(../images/title-img.png) no-repeat center bottom / 240px auto;}
 .white-bg-container .text-content{ }
-.white-bg-container .text-content p{ color: #666; text-align: center;}
+.white-bg-container .text-content p{ color: #777; text-align: center;}
 .white-bg-container .text-content p.date-text{ margin-bottom: 10px; }
 .white-bg-container .text-content p.location-text{ margin-bottom: 30px; }
-.white-bg-container a.red-btn{ background-color: #F08181; line-height: 40px; color: #fff; padding: 0 20px; border-radius: 4px; text-align: center; margin: 0 auto; display: block; max-width: 200px;}
+.white-bg-container a.red-btn{ background-color: #F08181; line-height: 40px; color: #fff; padding: 0 20px; border-radius: 4px; text-align: center; margin: 0 auto; display: block; max-width: 200px; text-decoration: none;}
+.white-bg-container a.red-btn:active, .white-bg-container a.red-btn:hover{ background-color: #F49090; }
 
+.photo-bg-container{ background:url(../images/img_2.jpg) no-repeat center top transparent; background-size: cover; position: relative;}
+.photo-bg-container .form-block{ background-color: #fff; padding: 40px 10px; margin: 0 10px; border-radius: 20px; max-width: 540px;}
 
 .form-content{ max-width: 400px; margin: 0 auto; padding: 0 20px;}
 .form-content .form-item{ margin-bottom: 30px; }
-.form-content .form-item p.form-title{ background: url(../images/red_leave_title.png) no-repeat left center / auto 16px; font-size: 16px; line-height: 20px; color: #e76666; font-weight: 600; padding-left: 36px; margin-bottom: 10px;}
+.form-content .form-item p.form-title{ background: url(../images/flower-title-img.png) no-repeat left center / auto 20px; font-size: 16px; line-height: 20px; color: #e76666; font-weight: 600; padding-left: 28px; margin-bottom: 10px;}
 .form-content .form-item input{ font-size: 16px; color: #777; line-height: 24px; border: 1px solid #ddd; border-radius: 5px; padding: 5px 10px; width: 100%;}
 .form-content .form-item select{ font-size: 16px; color: #777; line-height: 24px; border: 1px solid #ddd; border-radius: 5px; padding: 5px 10px; width: 100%; background: url(../images/select_arrow.png) no-repeat calc(100% - 10px) center / 8px auto; -webkit-appearance: none;}
 .form-content a.submit-btn{ max-width: 100%;}
@@ -72,9 +75,13 @@ body{
 	.full-banner-container,
 	.full-banner-container .overlay-bg{ min-height: 100%; }
 	.full-header-fixed .right-wrp a.header-menu{ display: block; }
-	.full-header-fixed .right-wrp ul{ display: none; background-color: rgba(0,0,0,0.6); height: 100vh; position: fixed; top: 0; left: 0; right: 0; padding-top: 80px;}
+	.full-header-fixed .right-wrp ul{ display: none; background-color: rgba(0,0,0,0.5); position: fixed; top: 68px; right: 10px; min-width: 200px; border-radius: 6px; }
+	.full-header-fixed .right-wrp ul:after{ content: ""; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid rgba(0,0,0,0.5); position: absolute; top: -8px; right: 15px;}
 	.full-header-fixed .right-wrp ul li{ float: none; width: 100%; text-align: center; }
-	.full-header-fixed .right-wrp ul li a{ padding: 0 16px; line-height: 80px;}
+	.full-header-fixed .right-wrp ul li a{ padding: 8px 16px; line-height: 40px;}
+	.full-header-fixed .right-wrp ul li a:active{ opacity: 0.8; }
+	.full-header-fixed.header-bg-white .right-wrp ul li a{ color: #fff; line-height: 40px;}
+
 	.full-banner-container .banner-words-block h2{ text-align: center; }
 	.full-banner-container .banner-words-block .lg-title{ font-size: 36px; margin-bottom: 10px;}
 	.full-banner-container .banner-words-block .sm-title{ font-size: 16px; }
