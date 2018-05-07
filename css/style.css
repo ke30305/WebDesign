@@ -576,6 +576,7 @@ img{ vertical-align: bottom;}
 
 	.description{ float: none; width: 100%; }
 	.userProfile .imgProfile{ float: none; margin-bottom: 20px; }
+	.userProfile .imgProfile img {max-width: 100%; max-height: 100%;}
 }
 /* MediaScreen x414 */
 @media screen and (max-width:414px) {
