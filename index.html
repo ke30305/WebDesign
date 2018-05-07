@@ -7,7 +7,7 @@
 	
 	<title>EVONNE'S DESIGN BOX</title>
 	
-	<meta name="keywords" content="YOYO'S DESIGN BOX, Design Collection"/>
+	<meta name="keywords" content="YOYO'S DESIGN BOX, YOYO'S 設計巴克司, Design Notepad"/>
 	<meta name="description" content="A collection book of design : creation, sketch, doodle, ideas, silhouettes!"/>
 	<meta property="og:site_name" content="YOYO'S DESIGN BOX" />
 	<meta property="og:url" content="http://yuyi.twbbs.org/" />
@@ -28,7 +28,7 @@
 	<meta name="msapplication-TileImage" content="img/favicon/favicon.png"> <!-- 32x32 or 64x64 -->
 	
 	<!-- Google Webfonts -->
-	<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Raleway:400,300,500,600,700|Cuprum:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
 	
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -42,13 +42,14 @@
 	<!-- script -->
  	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script> -->
 	<script src="js/lightbox.js"></script>
 	<script src="js/menu.js"></script>
 	<script>
 		$(function() 
 		{
 			menu.init();
+			
 		});
 	</script>
 </head>
@@ -56,20 +57,30 @@
 <body>
 	<div id="home" class="main">
 		<header id="MainWrapper" class="sticky-wrapper">
-			<div class="container">
+			<a id='mobile_menu_link' class="icon mobileBtn" href="javascript:void(0);"><span></span></a>
+			<div class="sticky-nav-overlay"></div>
+			<div class="sticky-nav-container">
+				<div class="nav-profile-box">
+					<div class="imgProfile"><img src="image/photos/Profile.jpg"></div>
+					<p class="title">Evonne Chen</p>
+					<p class="s-title">UI Designer</p>
+					<div class="social">
+						<a class="social-icon facebook icon-facebook-circled" target="_blank" href="https://www.facebook.com/yuyi.zeng1110"></a>
+						<a class="social-icon twitter icon-twitter-circled" target="_blank" href="https://twitter.com/walkingfish1110"></a>
+						<a class="social-icon pinterest icon-pinterest-circled" target="_blank" href="http://www.pinterest.com/ke30305s"></a>
+					</div>
+				</div>
 				<div class="row-box RowBox1">
 					<nav class="main-nav">
-						<a id='mobile_menu_link' data-icon="&#xe056;" class="icon mobileBtn"></a>
 						<ul id='mobile_menu_item' class="nav-list">
-							<li><a href="#"><span>Home</span></a></li>
+							<li><a href='javascript:menu.scroll("#home")'><span>Home</span></a></li>
 							<li><a href='javascript:menu.scroll("#About")'>About</a></li>
 							<li><a href='javascript:menu.scroll("#Resume")'>Resume</a></li>
-							<li><a href='javascript:menu.scroll("#Portfolio")'>Portfolio</a></li>
-							<li><a href='javascript:menu.scroll("#Contact")'>Contact</a></li>
+							<li><a href='javascript:menu.scroll("#Portfolio")'>Works</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div class="row-box RowBox2"><div id='mobile_lang_select' class="language"><select onchange="javascript:location.href=this.value;"><option selected="true" value="index.html">English</option><option value="index_tw.html">Chinese</option></select></div></div>
+				<div class="row-box RowBox2"><div id='mobile_lang_select' class="language"><select onchange="javascript:location.href=this.value;"><option selected="true" value="index.html">English</option><option value="index_tw.html">中文</option></select></div></div>
 			</div>
 		</header>
 		
@@ -82,143 +93,101 @@
 							<a class="slideOverlay"></a>
 							<div class="slideItem-word">
 								<h1>My Design Collection</h1>
-								<p>A collection of design : creation, sketch, doodle, ideas, silhouettes!</p>
+								<p>UIUX design, graphic creation, ideas, photography</p>
 							</div>
 						</li>
 					</ul>
 				</div>
-				<div class="box-controls">
-
-				</div>
+				<!-- <div class="box-controls"></div> -->
 			</div>
 		</section>
 		
 		<!-- About Section -->
 		<section id="About" class="section">
-			<div class="colorBlock about-block">
+			<div class="mainBlock about-block">
 				<div class="container">
-					<div class="block-maintitle"><h1><div data-icon="&#xe084;" class="icon"></div>About Me</h1></div>
 					<div class="block-mainbox">
-						<p>About my profile, skills.</p>
-					</div>
-				</div>
-			</div>
-			<div class="mainBlock about-block2">
-				<div class="container">
-					<div class="block-maintitle"><h2>I'm Evonne Chen</h2></div>
-					<div class="block-mainbox">
-						<div class="titleSmall">I am a UI Desginer</div>
 						<div class="userProfile">
-							<div class="imgProfile"><img src="image/photos/Profile.jpg"></div>
+							<div class="imgProfile"><img src="image/DSC_0098.jpg"></div>
 							<div class="description">
-								<p>I specialized in web and mobile UI design have seven years experience. I have relevant practical experience from collected demand, draw flow charts and Wireframe, making Prototype and develop web pages. <br>Like to think and study how to create more good user experience designs, and give the users have a wonderful experience.</p>
-								<!-- <a data-icon="&#xe041;" class="icon" href="https://www.youtube.com/playlist?list=PLrrrivZ9Tol2gYbNGArevg_6GTTCJlT_k" target="_blank"><span class="icon_word" target="_blank">View Video</span></a> -->
-								<a data-icon="&#xe036;" class="icon" href="http://walkingfish1110.wordpress.com/" target="_blank"><span class="icon_word">Visit Blog</span></a>
-								
+								<div class="block-maintitle"><h2>About Me</h2></div>
+								<p class="title">I'm Evonne Chen</p>
+								<p>I specialized in web and mobile UI design have seven years experience. <br>I have relevant practical experience from collected demand, draw flow charts and Wireframe, making Prototype and develop web pages. Like to think and study how to create more good user experience designs, and give the users have a wonderful experience.</p>
 							</div>
 						</div>
 					</div>
 					
-					<!-- <div class="block-line"><div data-icon="&#xe090;" class="icon bolckline-icon"></div><div class="line"></div></div>
-					
-					<div class="block-maintitle"><h2>Main Skills</h2></div>
 					<div class="block-mainbox">
-						<div class="titleSmall">I enjoy to create website, graphic and other beautiful designs.</div>
-						<div class="skillsHolder">
+						<div class="block-maintitle"><h2>My Skills</h2></div>
+						<div class="skillsHolder skillsHolder-en">
 							<div class="skillBar">
 								<div class="skillbarHolder">
-								<div class="skillbarTitle">Web Design</div>
-								<div class="skillbarPercentage bar95"><span>95%</span></div>
+									<div class="skillbarTitle">Photoshop / Illustrator</div>
+									<div class="skillbarPercentage bar90"><span>Expert</span></div>
 								</div>
+								<span class="skillLevel">Expert</span>
 							</div>
 							<div class="skillBar">
 								<div class="skillbarHolder">
-								<div class="skillbarTitle">Graphic Design</div>
-								<div class="skillbarPercentage bar90"><span>90%</span></div>
+									<div class="skillbarTitle">Sketch</div>
+									<div class="skillbarPercentage bar75"><span>Practiced</span></div>
 								</div>
-							</div>
-							
-							<div class="skillBar">
-								<div class="skillbarHolder">
-								<div class="skillbarTitle">HTML / CSS</div>
-								<div class="skillbarPercentage bar85"><span>85%</span></div>
-								</div>
+								<span class="skillLevel">Practiced</span>
 							</div>
 							<div class="skillBar">
 								<div class="skillbarHolder">
-								<div class="skillbarTitle">Media</div>
-								<div class="skillbarPercentage bar70"><span>70%</span></div>
+									<div class="skillbarTitle">HTML / CSS</div>
+									<div class="skillbarPercentage bar90"><span>Expert</span></div>
 								</div>
+								<span class="skillLevel">Expert</span>
 							</div>
 							<div class="skillBar">
 								<div class="skillbarHolder">
-								<div class="skillbarTitle">jQuery / JavaScript</div>
-								<div class="skillbarPercentage bar50"><span>50%</span></div>
+									<div class="skillbarTitle">jQuery / JavaScript</div>
+									<div class="skillbarPercentage bar75"><span>Practiced</span></div>
 								</div>
+								<span class="skillLevel">Practiced</span>
+							</div>
+							<div class="skillBar">
+								<div class="skillbarHolder">
+									<div class="skillbarTitle">Bootstrap</div>
+									<div class="skillbarPercentage bar50"><span>Intermediate</span></div>
+								</div>
+								<span class="skillLevel">Intermediate</span>
+							</div>
+							<div class="skillBar">
+								<div class="skillbarHolder">
+									<div class="skillbarTitle">After Effects</div>
+									<div class="skillbarPercentage bar25"><span>Beginner</span></div>
+								</div>
+								<span class="skillLevel">Beginner</span>
+							</div>
+							<div class="skillBar">
+								<div class="skillbarHolder">
+									<div class="skillbarTitle">Premiere</div>
+									<div class="skillbarPercentage bar25"><span>Beginner</span></div>
+								</div>
+								<span class="skillLevel">Beginner</span>
 							</div>
 						</div>
-					</div> -->
-					
-					<!-- <div class="block-line"><div data-icon="&#xe090;" class="icon bolckline-icon"></div><div class="line"></div></div>
-					
-					<div class="block-maintitle"><h2>Features</h2></div>
-					<div class="block-mainbox">
-						<div class="featuresHolder">
-							<div class="features-box">
-								<div class="features-icon features1"><div data-icon="&#xe044;" class="icon"></div></div>
-								<div class="features-words">
-									<h3>Creative Ideas</h3>
-									<p>Always track the latest design and Trend, also add some creative spark of myself.</p>
-								</div>
-							</div>
-							<div class="features-box">
-								<div class="features-icon features2"><div data-icon="&#xe019;" class="icon"></div></div>
-								<div class="features-words">
-									<h3>Digital Design</h3>
-									<p>Using Photoshop, Illustrator, Flash to create lots of stunning works.</p>
-								</div>
-							</div>
-							<div class="features-box">
-								<div class="features-icon features3"><div data-icon="&#xe087;" class="icon"></div></div>
-								<div class="features-words">
-									<h3>Web Creation</h3>
-									<p>Combining design and technology to create very artistic UI design.</p>
-								</div>
-							</div>
-							<div class="features-box">
-								<div class="features-icon features4"><div data-icon="&#xe024;" class="icon"></div></div>
-								<div class="features-words">
-									<h3>Multimedia</h3>
-									<p>Using post-production effects and film editing to create amazing videos.</p>
-								</div>
-							</div>
-						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- About Section End -->
-		
+
+		<div class="block-line"><div data-icon="&#xe090;" class="icon bolckline-icon"></div><div class="line"></div></div>
 		
 		<!-- Resume Section -->
 		<section id="Resume" class="section">
-			<div class="colorBlock resume-block">
+			<div class="mainBlock resume-block">
 				<div class="container">
-					<div class="block-maintitle"><h1><div data-icon="&#xe037;" class="icon"></div>Resume</h1></div>
 					<div class="block-mainbox">
-						<p>About my education, experience.</p>
-					</div>
-				</div>
-			</div>
-			<div class="mainBlock resume-block2">
-				<div class="container">
-					<div class="block-maintitle"><h2>Employment</h2></div>
-					<div class="block-mainbox">
-						<div class="titleSmall">About my employment and job description.</div>
+						<div class="block-maintitle"><h2>Experience</h2></div>
 						<div class="userJob">
 							<div class="jobBox">
-								<div class="jobTitle"><div data-icon="&#xe031;" class="icon jobTitle-icon"></div><h3>UI Designer - Ihergo</h3></div>
-								<div class="jobTime">2015/04 - Present</div>
+								<div class="jobTitle"><div class="jobTitle-icon"></div><span>2015/04 - 2018/03</span></div>
+								<div class="jobName">Web/UI Designer - Ihergo</div>
 								<div class="jobMain">
 									<ul>
 										<li>Making company mobile UI design, and web function maintenance.</li>
@@ -228,8 +197,8 @@
 								</div>
 							</div>
 							<div class="jobBox">
-								<div class="jobTitle"><div data-icon="&#xe031;" class="icon jobTitle-icon"></div><h3>Web Architect - Comwave</h3></div>
-								<div class="jobTime">2013/02 - 2015/3</div>
+								<div class="jobTitle"><div class="jobTitle-icon"></div><span>2013/02 - 2015/03</span></div>
+								<div class="jobName">Web Architect - Comwave Technology Ltd.</div>
 								<div class="jobMain">
 									<ul>
 										<li>Draw flow charts and compose requirements documents.</li>
@@ -240,8 +209,8 @@
 								</div>
 							</div>
 							<div class="jobBox">
-								<div class="jobTitle"><div data-icon="&#xe031;" class="icon jobTitle-icon"></div><h3>Web Designer - Formosasoft</h3></div>
-								<div class="jobTime">2010/12 - 2013/1</div>
+								<div class="jobTitle"><div class="jobTitle-icon"></div><span>2010/12 - 2013/02</span></div>
+								<div class="jobName">Web Designer - Formosasoft</div>
 								<div class="jobMain">
 									<ul>
 										<li>Design company website, and update product ads.</li>
@@ -251,17 +220,13 @@
 							</div>
 						</div>
 					</div>
-					
-					<div class="block-line"><div data-icon="&#xe090;" class="icon bolckline-icon"></div><div class="line"></div></div>
-					
-					<div class="block-maintitle"><h2>Education</h2></div>
 					<div class="block-mainbox">
-						<div class="titleSmall">About my educational background.</div>
+						<div class="block-maintitle"><h2>Education</h2></div>
 						<div class="userEdu">
 							<div class="eduBox">
-								<div class="eduTitle"><div class="icon icon-graduation-cap jobTitle-icon"></div><h3>Bachelor Degree - Digital Media Design</h3></div>
-								<div class="eduTime">2006 - 2010</div><div class="eduSchool">Chang Jung Christian University</div>
-								<div class="eduMain"><p>I majored in multimedia design and minored in graphic design, film planning and screenplay.</p></div>
+								<div class="jobTitle"><div class="jobTitle-icon"></div><span>2006/09 - 2010/06</span></div>
+								<div class="eduName">Chang Jung Christian University - Digital Media Design (Bachelor)</div>
+								<div class="eduMain"><p>Majored in multimedia design and minored in graphic design, film planning and screenplay.</p></div>
 							</div>
 						</div>
 					</div>
@@ -270,111 +235,122 @@
 			</div>
 		</section>
 		<!-- Resume Section End -->
-		
-		
+
+		<div class="block-line"><div data-icon="&#xe090;" class="icon bolckline-icon"></div><div class="line"></div></div>
+
 		<!-- Portfolio Section -->
 		<section id="Portfolio" class="section">
-			<div class="colorBlock portfolio-block">
+			<div class="mainBlock portfolio-block">
 				<div class="container">
-					<div class="block-maintitle"><h1><div data-icon="&#xe040;" class="icon"></div>Portfolio</h1></div>
+					<div class="block-maintitle"><h2>Works</h2></div>
 					<div class="block-mainbox">
-						<p>Lastest web, mobile, graphic, photography, multimedia.</p>
-					</div>
-				</div>
-			</div>
-			<div class="mainBlock portfolio-block2">
-				<div class="container">
-					<div class="block-maintitle"><h2>Design Works</h2></div>
-					<div class="block-mainbox">
-						<div class="titleSmall">I do a lot of amazing things, here are my design works.</div>
 						<ul class="WorkTab">
-							<li class="TabItem focus">Web</li>
+							<li class="TabItem focus">UIUX Design</li>
 							<li class="TabItem">Graphic</li>
 							<li class="TabItem">Photography</li>
-							<li class="TabItem">Video</li>
 						</ul>
 						<div class="WorkContent">
 							<!-- Block1 -->
 							<ul class="WorkBlock">
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/web_1.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/web_1.jpg"></a></div>
-									<div class="WorkDes">
-										<h3>Brunch Restaurant Tempale</h3>
-										<p>This website is for restaurant, introduced this restaurant's menu, chefs and location.</p>
-										<div class="LDemo_btn"><a href="http://yoyo-chen.com/design_templates/restaurant/index.html" target="_blank">Live Demo</a></div>
-									</div>	
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay" href="image/works/ihergoStore_mobileDesign.png" target="_blank">
+												<div class="Overlay_view"><span class="title">Ihergo Store Mobile Design</span><span>UIUX・Mobile・Ihergo Works</span></div>
+											</a>
+											<img src="image/works/web_0.jpg">
+										</div>
+									</div>
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/web_2.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/web_2.jpg"></a></div>
-									<div class="WorkDes">
-										<h3>Shopping Tempale</h3>
-										<p>This website is for fashion shop, introduced this shop's clothes, pants and shoes.</p>
-										<div class="LDemo_btn"><a href="http://yoyo-chen.com/design_templates/shopping/index.html" target="_blank">Live Demo</a></div>
-									</div>	
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay" href="http://yoyo-chen.com/design_templates/restaurant/index.html" target="_blank">
+												<div class="Overlay_view"><span class="title">Brunch Restaurant Design</span><span>Website・RWD・Self-training</span></div>
+											</a>
+											<img src="image/works/web_1.jpg">
+										</div>
+									</div>
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/web_3.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/web_3.jpg"></a></div>
-									<div class="WorkDes">
-										<h3>1000 Words Tree</h3>
-										<p>It's my Flash web, In 2010~2012. Have illustrations, web design and creations.</p>
-										<div class="LDemo_btn"><a href="http://yoyo-chen.com/design_templates/flash_web/index.html" target="_blank">Live Demo</a></div>
-									</div>	
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay" href="http://yoyo-chen.com/design_templates/shopping/index.html" target="_blank">
+												<div class="Overlay_view"><span class="title">E-commerce Design</span><span>Website・RWD・Self-training</span></div>
+											</a>
+											<img src="image/works/web_2.jpg">
+										</div>
+									</div>
+								</li>
+								<li class="WorkItem">
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay" href="http://yoyo-chen.com/design_templates/flash_web/index.html" target="_blank">
+												<div class="Overlay_view"><span class="title">2012 Personal Site</span><span>Website・Flash・Self-training</span></div>
+											</a>
+											<img src="image/works/web_3.jpg">
+										</div>
+									</div>
 								</li>
 							</ul>
 							<!-- Block2 -->
 							<ul class="WorkBlock">
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/Graphic_1.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/Graphic_1.jpg"></a></div>
-									<div class="WorkDes"><h3>Spring Party Invitation</h3><p>2014 spring party invitation, this year is the Chinese's Horse Year.</p></div>	
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay lightbox_trigger" href="image/works/Graphic_1.jpg">
+												<div class="Overlay_view"><span class="title">Spring Party Invitation</span><span>Visual・EDM</span></div>
+											</a>
+											<img src="image/works/Graphic_1.jpg">
+										</div>
+									</div>
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/Graphic_2.png"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/Graphic_2.jpg"></a></div>
-									<div class="WorkDes"><h3>Year End Party</h3><p>2013 year end party, welcome the New Year of 2014 coming.</p></div>	
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay lightbox_trigger" href="image/works/Graphic_2.png">
+												<div class="Overlay_view"><span class="title">Year End Party</span><span>Visual・EDM</span></div>
+											</a>
+											<img src="image/works/Graphic_2.jpg">
+										</div>
+									</div>
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/Graphic_3.png"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/Graphic_3.jpg"></a></div>
-									<div class="WorkDes"><h3>Year End Party</h3><p>2013 year end party invitation, Celebrate and say goodbye to 2013.</p></div>	
+									<div class="WorkPhoto">
+										<div class="WorkImg">
+											<a class="Overlay lightbox_trigger" href="image/works/Graphic_3.png">
+												<div class="Overlay_view"><span class="title">書香風格尾牙視覺</span><span>Visual・EDM</span></div>
+											</a>
+											<img src="image/works/Graphic_3.jpg">
+										</div>
+									</div>
 								</li>
-								<!-- <li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/works/Graphic_4.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/works/Graphic_4.jpg"></a></div>
-									<div class="WorkDes"><h3>Atlantis</h3><p>Using Photoshop, photos to Create the visual such as dark seabed atmosphere.</p></div>	
-								</li> -->
 							</ul>
 							<!-- Block3 -->
 							<ul class="WorkBlock">
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_1.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_1.jpg"></a></div>
-									<div class="WorkDes"><h3>Corner Coffee Shop</h3><p>At the Corner ,the teddy bear was sitting in front of the coffee shop.</p></div>	
+									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_1.jpg"><div class="Overlay_view">Corner Coffee Shop</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_1.jpg"></a></div>
+									<!-- <div class="WorkDes"><h3>轉角的咖啡店</h3><p>At the Corner ,the teddy bear was sitting in front of the coffee shop.</p></div>	 -->
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_2.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_2.jpg"></a></div>
-									<div class="WorkDes"><h3>Halloween Chandelier</h3><p>The restaurant is decorated for Halloween, become very dark.</p></div>	
+									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_2.jpg"><div class="Overlay_view">Halloween Chandelier</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_2.jpg"></a></div>
+									<!-- <div class="WorkDes"><h3>萬聖節快樂</h3><p>The restaurant is decorated for Halloween, become very dark.</p></div>	 -->
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_3.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_3.jpg"></a></div>
-									<div class="WorkDes"><h3>American Burger</h3><p>Rabbit Rabbit Restaurant's American burger really is not small !!</p></div>	
+									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_3.jpg"><div class="Overlay_view">Rabbit Rabbit Restaurant</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_3.jpg"></a></div>
+									<!-- <div class="WorkDes"><h3>美式大漢堡</h3><p>Rabbit Rabbit Restaurant's American burger really is not small !!</p></div>	 -->
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_4.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_4.jpg"></a></div>
-									<div class="WorkDes"><h3>Leisure Time After Work</h3><p>Tired after work, take me to the second floor restaurant to eat dinner.</p></div>	
+									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_4.jpg"><div class="Overlay_view">Leisure Time After Work</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_4.jpg"></a></div>
+									<!-- <div class="WorkDes"><h3>下班的休憩時光</h3><p>Tired after work, take me to the second floor restaurant to eat dinner.</p></div>	 -->
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_5.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_5.jpg"></a></div>
-									<div class="WorkDes"><h3>Gulliver's Travels</h3><p>This trip I went to Taiwan Presidential Office, Japan, China, London and America.</p></div>	
+									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_5.jpg"><div class="Overlay_view">Gulliver's Travels</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_5.jpg"></a></div>
+									<!-- <div class="WorkDes"><h3>葛列佛遊記</h3><p>his trip I went to Taiwan Presidential Office, Japan, China, London and America.</p></div>	 -->
 								</li>
 								<li class="WorkItem">
-									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_6.jpg"><div class="Overlay_view">View Picture</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_6.jpg"></a></div>
-									<div class="WorkDes"><h3>Seaside Bridge</h3><p>Taiwan's scenic north coast. Summer, ocean, fishing and rice cake.</p></div>	
-								</li>
-							</ul>
-							<!-- Block4 -->
-							<ul class="WorkBlock">
-								<li class="WorkItem">
-									<div class="WorkPhoto">
-										<iframe class="Overlay lightbox_m_trigger" width="300" height="200" src="https://www.youtube.com/embed/Y0AO4To6Ayc" frameborder="0" allowfullscreen></iframe>
-										<a class="WorkImg"><img src="image/photos/DSPhoto_1.jpg"></a>
-									</div>
-									<div class="WorkDes"><h3>The night of gallery</h3><p>Created in 2010, the story is about the gallery of the night, is not quiet as people imagine...</p></div>	
+									<div class="WorkPhoto"><a class="Overlay lightbox_trigger" href="image/photos/DSPhoto_6.jpg"><div class="Overlay_view">Seaside Bridge</div></a><a class="WorkImg"><img src="image/photos/DSPhoto_6.jpg"></a></div>
+									<!-- <div class="WorkDes"><h3>夏日的北海岸</h3><p>Taiwan's scenic north coast. Summer, ocean, fishing and rice cake.</p></div>	 -->
 								</li>
 							</ul>
 						</div>
@@ -383,54 +359,10 @@
 			</div>
 		</section>
 		<!-- Portfolio Section End -->
-
 		
-		<!-- Contact Section -->
-		<section id="Contact" class="section">
-			<div class="colorBlock contact-block">
-				<div class="container">
-					<div class="block-maintitle"><h1><div data-icon="&#xe042;" class="icon"></div>Contact</h1></div>
-					<div class="block-mainbox">
-						<p>About my education, experience.</p>
-					</div>
-				</div>
-			</div>
-			<div class="mainBlock contact-block2">
-				<div class="container">
-					<div class="block-mainbox">
-						<div class="message-img"><div data-icon="&#xe048;" class="icon"></div></div>
-						<div class="message-block">
-							<div class="messageBox">
-								<div class="message Address">Taipei City , Taiwan (R.O.C.)</div>
-								<div class="message Email">E-mail : <a href="mailto:walkingfish1110@gmail.com">walkingfish1110@gmail.com</a></div>
-								<!-- <div class="message Phone"></div> -->
-								<!-- <div class="message Blog"><a target="_blank" href="http://walkingfish1110.wordpress.com/">walkingfish1110.wordpress.com</a></div> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		
-		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-block">
-					<!-- <h4>Get In Touch</h4> -->
-					<p>You can follow my social to know more about me.</p>
-					<div class="social">
-						<a class="social-icon facebook icon-facebook-circled" target="_blank" href="https://www.facebook.com/yuyi.zeng1110"></a>
-						<!-- <a class="social-icon twitter icon-twitter-circled" target="_blank" href="https://twitter.com/walkingfish1110"></a> -->
-						<!-- <a class="social-icon google icon-gplus-circled" target="_blank" href="https://plus.google.com/117079398183687725106/posts"></a> -->
-						<!-- <a class="social-icon flickr icon-flickr-circled" target="" href=""></a> -->
-						<a class="social-icon pinterest icon-pinterest-circled" target="_blank" href="http://www.pinterest.com/ke30305s"></a>
-					</div>
-				</div>
-			</div>
+		<footer class="footer-copy">
+			<p>&copy; Copyright 2018 Evonne's design box.</p>
 		</footer>
-		<div class="footer-copy">
-			<p>&copy; Copyright 2018 EVONNE'S DESIGN BOX.</p>
-		</div>
 	</div>
 	
 	
@@ -446,7 +378,11 @@
 			</div>
 		</div>
 	</div>
+	
 	<script src="js/tab.js"></script>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>

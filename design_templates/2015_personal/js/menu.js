@@ -18,14 +18,8 @@ var menu =
     {
         if (!menu.is_mobile_enable()) return true;
 
-            $(".sticky-nav-container").animate({
-                left:'0',
-            }, 200);
-            $(".mobileBtn").addClass("change");
-            $('.sticky-nav-overlay').fadeIn(200);
-
-        // $('#mobile_menu_item').slideDown();
-        // $('#mobile_lang_select').slideDown();
+        $('#mobile_menu_item').slideDown();
+        $('#mobile_lang_select').slideDown();
         $('#mobile_menu_link').attr('show', 1);
     },
 
@@ -33,15 +27,9 @@ var menu =
     hide : function()
     {
         if (!menu.is_mobile_enable()) return true;
-            $(".sticky-nav-container").animate({
-                left:'-200',
-            }, 200);
-            $('.sticky-nav-overlay').fadeOut(200);
-            $(".mobileBtn").removeClass("change");
 
-
-        // $('#mobile_menu_item').slideUp();
-        // $('#mobile_lang_select').slideUp();
+        $('#mobile_menu_item').slideUp();
+        $('#mobile_lang_select').slideUp();
         $('#mobile_menu_link').attr('show', 0);
     },
 
