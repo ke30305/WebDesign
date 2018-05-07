@@ -569,7 +569,7 @@ img{ vertical-align: bottom;}
  @media screen and (max-width:768px) {
 	.main{ padding-left: 0; }
 	.section{ padding: 20px;}
-	.sticky-nav-container{ left: -200px;}
+	.sticky-nav-container{ left: -200px; height: 100vh;}
 	.mobileBtn{ display: block; }
 	
 	.block-line{ margin: 40px 20px; }
