@@ -24,11 +24,17 @@ h1	{ color: #fff; font-size: 3.5em; font-style: italic; }
 h2	{ color: #625772; font-size: 2.5em; font-style: italic; margin-top: 0;}
 h4	{ color: #ccc; font-size: 1.5em;}
 p	{ color:#999; font-size:0.9em; margin:7px 0; line-height: 20px;}
-select{
-    border: 0 solid;
-    font-family: 'Poppins', Helvetica, sans-serif;
+select{ 
+	border: 0 solid; 
+	font-family: 'Poppins', Helvetica, sans-serif; 
 	color: #555;
-    padding: 0.3em;
+	padding: 6px 10px;
+	background: url(../image/icons/ic-dropdown@2x.png) no-repeat calc(100% - 10px) center #fff;
+	background-size: 8px 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	min-width: 80px;
 }
 img{ vertical-align: bottom;}
 
@@ -114,7 +120,7 @@ img{ vertical-align: bottom;}
 	justify-content: center;
 }
 .social:after{ content: ""; clear: both; display: table; }
-.social-icon{ float: left; font-size: 20px; color: rgba(255,255,255,0.2); margin: 0 4px; }
+.social-icon{ float: left; font-size: 24px; color: rgba(255,255,255,0.2); margin: 0 4px; display: -webkit-box; display: -ms-flexbox; display: flex;}
 .social-icon:hover{ color: rgba(255,255,255,0.5);}
 
 .nav-profile-box .imgProfile img { width: 80px; height: 80px; border-radius: 50%;}

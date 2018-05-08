@@ -23,9 +23,6 @@ var menu =
             }, 200);
             $(".mobileBtn").addClass("change");
             $('.sticky-nav-overlay').fadeIn(200);
-
-        // $('#mobile_menu_item').slideDown();
-        // $('#mobile_lang_select').slideDown();
         $('#mobile_menu_link').attr('show', 1);
     },
 
@@ -39,9 +36,6 @@ var menu =
             $('.sticky-nav-overlay').fadeOut(200);
             $(".mobileBtn").removeClass("change");
 
-
-        // $('#mobile_menu_item').slideUp();
-        // $('#mobile_lang_select').slideUp();
         $('#mobile_menu_link').attr('show', 0);
     },
 
