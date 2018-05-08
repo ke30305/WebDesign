@@ -35,6 +35,7 @@ select{
 	-moz-appearance: none;
 	-ms-appearance: none;
 	min-width: 80px;
+	border-radius: 5px;
 }
 img{ vertical-align: bottom;}
 
