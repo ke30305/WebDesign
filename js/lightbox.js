@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
 		 
 		//Get clicked link href
 		var image_href = $(this).attr("href");
+		var image_info = $(this).attr("name");
 		 
 		/*  
 		If the lightbox window HTML already exists in document, 
@@ -20,6 +21,7 @@ jQuery(document).ready(function($) {
 			 
 			//place href as img src value
 			$('#content').html('<img src="' + image_href + '" />');
+			$('.lightbox_info').html(image_info);
 			 
 			//show lightbox window - you could use .show('fast') for a transition
 			$('#lightbox').show();
