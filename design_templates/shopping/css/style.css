@@ -51,7 +51,7 @@ a:hover	{ color:#999; }
 .slider-box		{ position: relative;}
 .slider-box img	{ width: 100%;}
 .slider-ctrl	{ position: absolute; right: 0; left: 0; margin: -35px auto 0; display: inline; z-index: 10;}
-.slider-ctrl > a { background-color: rgba(0, 0, 0, 0.5); color: #fff; font: 400 0.8em 'Muli', sans-serif; padding: 6px 10px; margin: 0 1px; cursor: pointer; border-radius: 50%}
+.slider-ctrl > a { background-color: rgba(0, 0, 0, 0.5); color: #fff; font: 400 0.8em/26px 'Muli', sans-serif; margin: 0 1px; cursor: pointer; border-radius: 50%; height: 28px; width: 28px; display: inline-block;}
 .slider-ctrl > a:hover{ background-color: rgba(51, 204, 204, 1);}
 .slider-ctrl .enable, .slider-ctrl .enable:hover{ background-color: rgba(51, 204, 204, 1);}
 
@@ -64,6 +64,7 @@ a:hover	{ color:#999; }
 /* All Section */
 .row		{ margin: 30px auto; display: block; }
 .container	{ margin: 0 auto; padding: 0 10px; max-width: 900px; text-align:center; }
+.container:after{ content: " "; clear: both; display: table; }
 
 /* Small AD Section */
 .ad-picture		{ width: 49%; overflow: hidden; position: relative;}
@@ -75,7 +76,7 @@ a:hover	{ color:#999; }
 /* Title */
 .block-title{ position: relative;}
 .title-line	{ border-bottom: 4px double #777; position: relative; bottom: 30px; max-width: 900px;}
-.title-word	{ background: #fff; font: 400 2em/60px 'Raleway', sans-serif; color: #555; position: relative; margin: 0 auto; padding: 0px 10px; text-transform: uppercase; display:table; z-index: 1;}
+.title-word	{ background: #fff; font: 400 2em/60px 'Raleway', sans-serif; color: #555; position: relative; margin: 0 auto; padding: 0px 16px; text-transform: uppercase; display:table; z-index: 1;}
 
 /* Product Section */
 .product_list	{ float: left; width: 22.2%; margin: 0 3.7% 0 0; text-align: center;}
@@ -91,9 +92,11 @@ a:hover	{ color:#999; }
 .AD-word	{ font: 400 2.9em/70px 'Kalam', cursive; color: #fff; position: absolute; top: 30%; left: 0; right: 0;}
 
 /* Shopping Guide Section */
-.guide-box	{float: left; background: #eee; font: 400 1.3em/30px 'Raleway', sans-serif; color: #999; padding: 10px 20px; width: 48%; text-align: left; box-sizing: border-box; }
+.guide-box	{float: left; background: #eee; font: 400 1.3em/30px 'Raleway', sans-serif; color: #999; padding: 16px 20px; width: 48%; text-align: left; box-sizing: border-box; }
+.guide-box:after{ content: " "; clear: both; display: table; }
 .guide-box-right{ float: right;}
-.guide-img	{ float: left; margin-right: 20px;}
+.guide-img	{ float: left; margin-right: 20px; height: 64px;}
+.guide-word { float: right; width: calc(100% - 84px);}
 
 /*---------------------------- footer ----------------------------*/
 .footer-type	{ font: 400 0.8em/30px 'Muli', sans-serif; background: #222; color: #999; padding: 10px; }

@@ -57,11 +57,11 @@ p	{ line-height: 20px; margin: 5px 0;}
 
 /* All Section */
 .container	{ padding: 10px; margin: 0 auto; max-width: 1000px; display: table;}
-.title		{ font: 700 1.8em/30px 'Buenard', serif; color: #333; margin: 0 auto; padding: 25px 0; text-align: center; text-transform: uppercase; width: 80%;}
+.title		{ font: 700 1.8em/30px 'Buenard', serif; color: #333; margin: 0 auto; padding: 40px 0; text-align: center; text-transform: uppercase; width: 80%;}
 .title-word	{ margin: -15px auto 0; position: absolute; left: 0; right: 0;}
 .title-line-left	{ border-top: 1px solid #333; float:left; width: 38%;}
 .title-line-right	{ border-top: 1px solid #333; float:right; width: 38%;}
-.descrip	{ color: #333; line-height: 20px; width: 70%; margin: 0 auto; text-align: center;}
+.descrip	{ color: #333; line-height: 20px; width: 70%; margin: 0 auto 20px; text-align: center;}
 #Daily-block .title-line-left, #Daily-block .title-line-right{ width: 30%;}
 
 .row				{ margin: 20px 0;}
@@ -120,7 +120,7 @@ p	{ line-height: 20px; margin: 5px 0;}
 .contact-detail	{ color:#333; font-size: 1.3em;}
 
 /* Message Section */
-.message-main	{ background:#fff; width: 90%; margin: 0 auto; padding: 20px 40px 30px 30px; border-radius: 10px; box-sizing: border-box;}
+.message-main	{ background:#fff; width: 90%; margin: 0 auto; padding: 20px 40px 30px 30px; border-radius: 10px; box-sizing: border-box; max-width: 800px;}
 .message-title	{ color:#e55; font: 700 3em/50px 'Buenard', serif; text-transform: none; margin: 0 auto; padding: 10px 0 20px; text-align: center; width: 80%;}
 .message-box	{ margin-bottom: 20px;}
 .message-box table{ font: 300 1.5em 'Buenard', serif; color: #999; width:100%; border: 0; margin-bottom: 10px;}
@@ -132,13 +132,13 @@ p	{ line-height: 20px; margin: 5px 0;}
 .message-submit a:hover	{ color:#fff; background: #e55;}
 
 /*---------------------------- footer ----------------------------*/
-.footer-type{ color: #fff; font-size: 1em; text-align: center;}
+.footer-type{ color: rgba(255,255,255,0.3); font-size: 1em; text-align: center;}
 .footer-lace{ background: url(../images/footer-lace.png) repeat-x; height: 10px;}
-.footer-main{ background-color: #452218;padding: 10px 10px 20px;}
-.footer-main a		{ color: #fff; cursor: pointer;}
+.footer-main{ background-color: #452218;padding: 20px 10px;}
+.footer-main a		{ color: rgba(255,255,255,0.5); cursor: pointer;}
 .footer-main a:hover	{ color: #fe0;}
 .social		{ margin: 0 auto;}
-.social img	{ width: 40px; height: 40px; margin: 5px 2px;}
+.social img	{ width: 40px; height: 40px; margin: 5px 6px;}
 
 
 /* ---------------------------- MediaScreen ---------------------------- */

@@ -1,5 +1,5 @@
 body{
-	font-family: 'Poppins', Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 16px;
 	color: #555;
 	margin:0;
@@ -424,10 +424,10 @@ img{ vertical-align: bottom;}
 	background-color: #F9A1BC;
 	color: #fff;
 	font-size: 0.7rem;
-	padding: 3px 8px;
+	padding: 4px 12px;
 	margin: 0 0 0 24px; 
 	border-radius: 15px;
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
 }
 
 .jobMain, .eduMain	{ text-align: left; padding: 0 0 0 24px;}
@@ -509,9 +509,12 @@ img{ vertical-align: bottom;}
 	position: relative; 
 	margin: 0 8px 16px; 
 	width: calc((100%/4) - 16px); 
+}
+.filters .grid .character-imgbox{
+	position: relative;
 	border-radius: 8px; 
 	overflow: hidden; 
-	box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 .filters .grid img{ width: 100%;}
 .Overlay{
