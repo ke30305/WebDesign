@@ -1,5 +1,5 @@
 body{
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
 	font-size: 16px;
 	color: #555;
 	margin:0;
@@ -26,7 +26,7 @@ h4	{ color: #ccc; font-size: 1.5em;}
 p	{ color:#999; font-size:0.9em; margin:7px 0; line-height: 20px;}
 select{ 
 	border: 0 solid; 
-	font-family: 'Poppins', Helvetica, sans-serif; 
+	font-family: Helvetica Neue, Helvetica, sans-serif; 
 	color: #555;
 	padding: 6px 10px;
 	background: url(../image/icons/ic-dropdown@2x.png) no-repeat calc(100% - 10px) center #fff;
