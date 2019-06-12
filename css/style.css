@@ -176,7 +176,7 @@ img{ vertical-align: bottom;}
 .container	{ margin: 0 auto; max-width: 1200px; text-align: left;}
 .title-img	{ margin-right:10px;}
 
-.block-maintitle{}
+.block-maintitle{ text-align: center; }
 .block-mainbox	{ margin-bottom: 100px; }
 .block-mainbox:last-of-type{ margin-bottom: 0; }
 .titleSmall		{ font-size: 0.9em; color: #777; margin: 8px 0; }
@@ -283,6 +283,7 @@ img{ vertical-align: bottom;}
 	max-width: 240px;
 	max-height: 240px;
 	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 .description{
 	float: left;
@@ -291,6 +292,8 @@ img{ vertical-align: bottom;}
 }
 .description p{ margin: 0; line-height: 28px;}
 .description p.title{ font-size: 1.2rem; color: #555; font-weight: 600; margin-bottom: 8px;}
+.description a{ font-size: 0.95em; border: 1px solid #F9A1BC; color: #F9A1BC; margin-top: 16px; padding: 8px 24px; border-radius: 8px; text-align: center; display: inline-block;}
+.description a:hover, .description a:active{ background: #F9A1BC; color: #fff;}
 .description .icon{
 	background-color: #F9A1BC;
 	font-size: 1em;
@@ -489,20 +492,23 @@ img{ vertical-align: bottom;}
 .portfolio-block .block-maintitle,
 .portfolio-block .block-mainbox{ text-align: center; }
 .filters{}
-.filters .button-group{ margin: 0 auto 20px; text-align: center;}
+.filters .button-group{ margin: 0 auto 24px; text-align: center;}
 .filters .button-group > .button{ 
 	font-size: 0.9rem; 
-	background-color: #eee; 
-	color: #777; border: 0; 
+	background: #fff;
+	border: 1px solid #F9A1BC; 
+	color: #F9A1BC; 
 	line-height: 20px; 
 	padding: 4px 12px; 
-	margin: 0 2px; 
+	margin: 0 4px 0 0; 
 	text-align: center; 
 	min-width: 80px; 
 	border-radius: 5px; 
 	outline:none;
+	box-sizing: border-box;
 }
 .filters .button-group > .button:hover{ background-color: #F9A1BC; color: #fff}
+.filters .button-group > .button:last-of-type{ margin-right: 0;}
 .filters .button-group > .button.is-checked{ background-color: #F9A1BC; color: #fff;}
 .filters .grid{ margin: 0 16px 16px; }
 .filters .grid .character{ 
@@ -607,7 +613,8 @@ img{ vertical-align: bottom;}
 	.block-line{ margin: 40px 20px; }
 
 	.description{ float: none; width: 100%; }
-	.userProfile .imgProfile{ float: none; margin-top: 20px;}
+	.description a{ padding: 10px 16px; display: block;}
+	.userProfile .imgProfile{ float: none; margin-bottom: 24px;}
 	.userProfile .imgProfile img{ max-width: 100%; max-height: 100%;}
 	.filters .grid .character{ margin: 0 8px 16px; width: calc((100%/2) - 16px); }
 }
@@ -620,6 +627,7 @@ img{ vertical-align: bottom;}
 	.skillLevel{ display: block; }
 	.skillbarPercentage span{ display: none; }
 
+	.filters .button-group > .button{ padding: 4px 8px; min-width: 64px;}
 	.filters .grid{ margin: 0; }
 	.filters .grid .character{ width: calc(100% - 16px);}
 }
