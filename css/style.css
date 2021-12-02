@@ -96,7 +96,7 @@ img{ vertical-align: bottom;}
 	left: 0;
 	bottom: 0;
 	display: inline-table;
-	width: 320px;
+	width: 240px;
 	height: 100%;
 	z-index: 100;
 	-o-transition: all .30s linear;
@@ -107,7 +107,13 @@ img{ vertical-align: bottom;}
 .nav-profile-box{ border-bottom: 1px solid rgba(255,255,255,0.08); margin: 20px; padding-bottom: 30px; }
 .nav-profile-box p.title{ font-size: 1.2rem; color: #fff; line-height: 24px; letter-spacing: 0.5px; margin: 8px auto 4px; opacity: 0.5;}
 .nav-profile-box p.s-title{ font-size: 0.85rem; color: #fff; font-weight: 300; line-height: 20px; margin-bottom: 8px; opacity: 0.3; }
-.nav-profile-box .imgProfile { height: 80px; overflow: hidden;}
+.nav-profile-box .imgProfile { 
+	height: 72px; 
+	overflow: hidden;
+	background: url(../image/icons/logoicon-w.svg) no-repeat center center transparent;
+	background-size: 48px auto;
+	opacity: 0.6;
+}
 .social{ 
 	margin: 12px auto 0; 
 	display: -webkit-box;
@@ -132,7 +138,7 @@ img{ vertical-align: bottom;}
 }
 .social-icon:hover, .social-icon:active{ color: rgba(255,255,255,0.5);}
 
-.nav-profile-box .imgProfile img { width: 80px; height: 80px; border-radius: 50%;}
+/*.nav-profile-box .imgProfile img { width: 80px; height: 80px; border-radius: 50%;}*/
 .wrapper-row{ padding:0 10px; text-align:center; }
 .row-box	{  }
 .language	{ margin-top: 20px;}
@@ -161,7 +167,7 @@ img{ vertical-align: bottom;}
 .main-nav li li a:hover	{ color: #fff; }
 
 /* Main Body */
-.main{ margin:0; padding:0 0 0 320px; }
+.main{ margin:0; padding:0 0 0 240px; }
 .section{
 	position: relative;
 	display: block;
@@ -283,7 +289,7 @@ img{ vertical-align: bottom;}
 	max-width: 240px;
 	max-height: 240px;
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1), 0 15px 35px 0 rgba(0, 0, 0, 0.05);
 }
 .description{
 	float: left;
@@ -510,7 +516,7 @@ img{ vertical-align: bottom;}
 .filters .button-group > .button:hover{ background-color: #F9A1BC; color: #fff}
 .filters .button-group > .button:last-of-type{ margin-right: 0;}
 .filters .button-group > .button.is-checked{ background-color: #F9A1BC; color: #fff;}
-.filters .grid{ margin: 0 16px 16px; }
+.filters .grid{ margin: 0 0 16px; }
 .filters .grid .character{ 
 	position: relative; 
 	margin: 0 8px 16px; 
@@ -518,9 +524,9 @@ img{ vertical-align: bottom;}
 }
 .filters .grid .character-imgbox{
 	position: relative;
-	border-radius: 8px; 
+	border-radius: 4px; 
 	overflow: hidden; 
-	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1), 0 15px 35px 0 rgba(0, 0, 0, 0.05);
 }
 .filters .grid img{ width: 100%;}
 .Overlay{
