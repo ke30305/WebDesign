@@ -10,39 +10,45 @@ var menu =
     // 判斷是否為 mobile 模式
     is_mobile_enable : function()
     {
-        return (screen.availWidth <= 769) ? true : false;
+        return (screen.availWidth <= 768);
     },
 
     // 選單顯示
     show : function()
     {
-        if (!menu.is_mobile_enable()) return true;
+        if (!menu.is_mobile_enable()) {
+            return true;
+        }
 
-            $(".sticky-nav-container").animate({
-                left:'0',
-            }, 200);
-            $(".mobileBtn").addClass("change");
-            $('.sticky-nav-overlay').fadeIn(200);
+        $(".sticky-nav-container").animate({
+            left:'0',
+        }, 200);
+        $(".mobileBtn").addClass("change");
+        $('.sticky-nav-overlay').fadeIn(200);
         $('#mobile_menu_link').attr('show', 1);
     },
 
     // 選單隱藏
     hide : function()
     {
-        if (!menu.is_mobile_enable()) return true;
-            $(".sticky-nav-container").animate({
-                left:'-200',
-            }, 200);
-            $('.sticky-nav-overlay').fadeOut(200);
-            $(".mobileBtn").removeClass("change");
+        if (!menu.is_mobile_enable()) {
+            return true;
+        }
 
+        $(".sticky-nav-container").animate({
+            left:'-200',
+        }, 200);
+        $('.sticky-nav-overlay').fadeOut(200);
+        $(".mobileBtn").removeClass("change");
         $('#mobile_menu_link').attr('show', 0);
     },
 
     // 顯示切換
     toggle : function(event)
     {
-        if (!menu.is_mobile_enable()) return true;
+        if (!menu.is_mobile_enable()) {
+            return true;
+        }
 
         var show = $('#mobile_menu_link').attr('show');
         if (show != 1)
