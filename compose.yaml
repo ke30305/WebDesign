@@ -1,0 +1,12 @@
+services:
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - .:/usr/share/nginx/html
+    networks:
+      - nginx-net 
+    container_name: nginx-evonne 
+
+networks:
+  nginx-net:
+    external: true
