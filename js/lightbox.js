@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 	});
 	 
 	//Click anywhere on the page to get rid of lightbox window
-	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+	$(document).on('click', '#lightbox', function() {
 		$('#lightbox').hide();
 	});
  
