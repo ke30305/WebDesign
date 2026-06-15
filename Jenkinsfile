@@ -30,7 +30,7 @@ pipeline {
 
     environment {
         WEB_HOST      = 'leo@10.0.0.20'
-        APP_DIR       = '/var/www/webdesign'
+        APP_DIR       = '/var/www/WebDesign'
         SLACK_WEBHOOK = credentials('slack-webhook')
     }
 
